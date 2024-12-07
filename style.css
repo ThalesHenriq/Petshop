@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fcb54c;
+    padding: 10px 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.banner {
+    background: url('img/1.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    text-align: center; /* Alinha o texto horizontalmente ao centro */
+    padding: 300px 0;
+    border: 200px;
+    position: relative; /* Necessário para posicionar o h2 e o botão */
+}
+
+.banner h2, .banner button {
+    position: absolute; /* Para posicionar ambos elementos */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
+.banner h2 {
+    top: 50px; /* Ajuste este valor para definir a altura desejada */
+}
+
+.banner button {
+    top: 120px; /* Ajuste este valor para definir a altura do botão */
+}
+
+.services {
+    background: url('img/2.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(243, 239, 239);
+    text-align: left;
+    padding: 300px 0;
+}
+.products {
+    background: url('img/3.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    text-align: calc(10, 50, 50, 50 );
+    padding: 300px 0;
+}
+
+/* Estilo de Cada Kit */
+.kits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.kit {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.kit:hover {
+    transform: translateY(-5px);
+}
+
+.kit img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.kit h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.kit p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.kit .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #8b0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.kit .btn:hover {
+    background-color: #a00000;
+}
+
+
+.about-us {
+    background: url('img/4.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 300px 30px;
+}
+.contact {
+    background: url('img/5.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(231, 230, 230);
+    text-align: center;
+    padding: 300px 0;
+}
+
+
+footer {
+    background-color: #fcb54c;
+    color: rgb(8, 3, 3);
+    text-align: center;
+    padding: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+@media (max-width: 768px) {
+    .kits-container {
+        flex-direction: column; /* Kits em uma coluna */
+        align-items: center;
+    }
+
+    .kit {
+        width: 90%; /* Ocupa quase toda a largura da tela */
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .kits h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .kit {
+        width: 100%; /* Ocupa 100% da tela */
+        padding: 15px;
+    }
+
+    .kit h3 {
+        font-size: 1.2rem;
+    }
+
+    .kit p {
+        font-size: 0.9rem;
+    }
+
+    .kit .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

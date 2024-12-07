@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">produtos</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Seu Pet Merece o Melhor!</h2>
+        <button>Conheça Nossos Serviços</button>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Serviços</h2>
+        <p>Banho e Tosa, Vacinação, Hotel para Pets e muito mais!</p>
+    </section>
+
+    <section id="products" class="products">
+        <div class="kits-container">
+            <!-- Exemplo de item de cesta -->
+            <div class="kit">
+                <img src="img/1.jpg" alt="">
+                <h3>Cama para Pet</h3>
+                <p>Preço: R$ 169,99</p>
+            </div>
+            <!-- Cesta 2 -->
+            <div class="kit">
+                <img src="img/2.jpg" alt="">
+                <h3>Raçao Pedigree de 15kg</h3>
+                <p>Preço: R$ 119,99</p>
+            </div>
+
+            <!-- Cesta 3 -->
+            <div class="kit">
+                <img src="img/3.jpg" alt="">
+                <h3>Coleira</h3>
+                <p>Preço: R$ 39,99</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="about-us" class="about-us">
+        <h2>Sobre Nós</h2>
+        <p>Conheça a nossa história e nossa equipe dedicada.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Endereço: Rua dos Pets, 123, Franca, SP</p>
+        <p>Telefone: (16) 99999-9999</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Seu Amigo Feliz Pet Shop. Todos os direitos reservados.</p>
+        <p>Política de Privacidade | Termos de Uso</p>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+    
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
